@@ -74,6 +74,8 @@ struct Weather: WeatherInfo {
     }
 }
 
+// MARK: Mock ups
+
 let weatherMockup = Weather(day: Date(), conditions: .parcialmenteNublado, temperature: 13.5, tempForHours: [
     "00": HourlyWeather(conditions: .nublado, temperature: 11.0),
     "01": HourlyWeather(conditions: .nublado, temperature: 10.8),

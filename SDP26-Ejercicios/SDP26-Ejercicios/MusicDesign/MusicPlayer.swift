@@ -56,5 +56,5 @@ struct MusicPlayer: View {
 }
 
 #Preview {
-    MusicPlayer(song: songMockUp)
+    MusicPlayer(song: .mock)
 }

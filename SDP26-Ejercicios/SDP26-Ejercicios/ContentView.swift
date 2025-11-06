@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var todoItems: [TodoItem] = todoTest
+    
     var body: some View {
         NavigationStack {
             List {
                 Section {
                     NavigationLink {
-                        MusicPlayer(song: songMockUp)
+                        MusicPlayer(song: .mock)
                     } label: {
                         Label("Music Player", systemImage: "music.note.list")
                     }
@@ -25,7 +27,7 @@ struct ContentView: View {
                     }
                     
                     NavigationLink {
-                        TodoListView()
+                        TodoListView(todoItems: $todoItems)
                     } label: {
                         Label("Todo list", systemImage: "cloud.sun.fill")
                     }

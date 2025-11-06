@@ -10,6 +10,6 @@ struct SongModel {
     let artist: String
     // Represented in seconds
     let duration: String
+    
+    static let mock = SongModel(name: "La mazucamba", artist: "Oscar de Leon", duration: "2:20")
 }
-
-let songMockUp = SongModel(name: "La mazucamba", artist: "Oscar de Leon", duration: "2:20")

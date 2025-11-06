@@ -32,38 +32,7 @@ struct TodoListView: View {
                         }
                 }
             } header: {
-                HStack {
-                    Button("Add", systemImage: "plus") {
-                        // TODO: Add Action
-                    }
-                    .buttonStyle(.glassProminent)
-                    .buttonSizing(.flexible)
-                    .frame(maxWidth: .infinity)
-                    
-                    Menu {
-                        Button("Priority", systemImage: "arrow.up") {
-                            // TODO: Add Action
-                        }
-                        
-                        Button("Date", systemImage: "calendar") {
-                            // TODO: Add Action
-                        }
-                    } label: {
-                        Label("Filter", systemImage: "calendar")
-                            .padding(.vertical, 6)
-                            .foregroundStyle(.white)
-                            .frame(maxWidth: .infinity)
-                            .background(.blue, in: Capsule())
-                            .glassEffect(.clear)
-                        // Can I use a button here? Will that be a good practice?
-//                        Button("Filter", systemImage: "calendar") {
-//                            // TODO: Add Action
-//                        }
-//                        .buttonStyle(.glassProminent)
-//                        .buttonSizing(.flexible)
-//                        .frame(maxWidth: .infinity)
-                    }
-                }
+                TodoItemHeader()
             }
         }
         .toolbar {

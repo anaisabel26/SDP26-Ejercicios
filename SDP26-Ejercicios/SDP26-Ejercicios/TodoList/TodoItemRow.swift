@@ -14,10 +14,6 @@ struct TodoItemRow: View {
         HStack(alignment: .top, spacing: 16) {
             Button("RadioButton") {
                 item.completed.toggle()
-//                if let index = todoItems.firstIndex(where: { $0.id == item.id }) {
-//                    todoItems[index] = item
-//                    filter(by: selected)
-//                }
             }
             .buttonStyle(RadioButtonStyle(isSelected: $item.completed))
             

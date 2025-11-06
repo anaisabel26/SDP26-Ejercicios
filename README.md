@@ -12,7 +12,7 @@ Follow these simple steps to download and run the project:
 3. Run the Project: Select your desired device or simulator and click the Run button (or press $\text{Cmd} + \text{R}$).
 4. Explore: Navigate through the different practice views to examine the layout code.
 
-# Content
+# ✨ Contained Layouts and Status
 
 - [x] Player Music layout
 - [x] Weather Layout
